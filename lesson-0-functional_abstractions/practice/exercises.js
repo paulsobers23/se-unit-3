@@ -31,3 +31,19 @@ const headAss = (str) => {
  console.log(wordArr.join(''));
 }
 headAss('abcdef');
+
+let numArray = [1,2,3,4,5];
+const squared = function(numbers){
+    numArray.map(function(nums){
+        console.log (nums * 2);
+    });
+}
+squared(numArray);
+
+let wordArr = ['dog','cat','worm','bug']
+const pluralize = function(words){
+    wordArr.map(function(word){
+        console.log (`${word}s`);
+    });
+}
+pluralize(wordArr);
