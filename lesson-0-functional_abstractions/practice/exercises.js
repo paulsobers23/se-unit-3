@@ -1,8 +1,7 @@
 let fellows = ['paul','peter','devonte','mark','emanuel','carmen','anne','laisha','cielo','stephanie'];
-let logmyFellows = fellows.forEach(function (names) {
+fellows.forEach(function (names) {
      console.log(names);
 }); 
-logmyFellows(fellows);
 
 const madFellows = [];
  fellows.forEach(function (names) {
@@ -30,7 +29,7 @@ const headAss = (str) => {
 });
  console.log(wordArr.join(''));
 }
-headAss('abcdef');
+headAss('hello word');
 
 let numArray = [1,2,3,4,5];
 const squared = function(numbers){
@@ -47,3 +46,67 @@ const pluralize = function(words){
     });
 }
 pluralize(wordArr);
+
+const songs = [
+   {song: 'Phenom', artist: 'Alex Mali'},
+   {song: 'Too Deep', artist: 'dvsn'},
+   {song: 'FireFly', artist: 'Mura Masa'}
+
+];
+const songBy = function(songs) {
+  songs.map(function(song){
+        console.log(`${song.song} by ${song.artist},`); 
+  });  
+};
+songBy(songs);
+
+ const users = [
+    { firstName: 'Homer', lastName: 'Simpson' },
+    { firstName: 'Marge', lastName: 'Simpson' },
+    { firstName: 'Bart', lastName: 'Simpson' },
+    { firstName: 'Lisa', lastName: 'Simpson' },
+    { firstName: 'Maggie', lastName: 'Simpson' }
+];
+
+const firstNames = function(users){
+  let firstNameArr = [];
+  users.map(function(user){
+         console.log(`${user.firstName}`);
+  }); 
+};
+firstNames(users);
+
+const fullNames = function(users){
+  let fullNameArr = [];
+  users.map(function(user){
+         console.log(`${user.firstName} ${user.lastName}`);
+  }); 
+};
+fullNames(users);
+
+// #10 Need to be done , also add values to return array questions
+
+const lessThanThen = function(numbers){
+  let num = numbers.filter(number => number < 10);
+  return num;
+};
+
+lessThanThen([1, 5, 12, 18, 94, 3, 16]);
+
+const onlyEvens = function(numbers){
+  let num = numbers.filter(number => number % 2 === 0);
+  return num;
+};
+onlyEvens([25, 16, 12, 99, 8, 37]);
+
+const onlyOddWords = function(words){
+  let oddWord = words.filter(word => word.length % 2 !== 0);
+  return oddWord;
+}
+onlyOddWords(['hello', 'my', 'name', 'is', 'alexa']);
+
+
+
+
+
+
